@@ -1,20 +1,35 @@
 # Team members: UW ID #s and names - there is no special format for this.
-
+  9064978704 Saad, Alexander
+  9065835267 Elizondo, Aaron
 
 # Trace 1: HTTP
 ## Give three websites (domain Nname and IP addresses) visited from source IP address `192.168.0.100`
+http://205.251.242.54/ - https://www.amazon.com
+http://69.16.143.26/ - http://www.bing.com
+http://50.93.210.4/ - http://www.madisonproperty.com
 
 ## Give three search queries and the domain of the site for each query made from source IP address `192.168.0.100`
+https://www.bing.com was searched for "madison map"
+http://www.amazon.com was search for "adventures in Stochastic Processes"
+http://www.baidu.com was searched for "My Love from the Star" (but in Chinese)
 
 
 # Trace 2: FTP
 ## What is the user name and password used to connect to the FTP server?
+username: shiningmoon
+password: public
 
 ## List any (and all) files that were downloaded.
+There were four files:
+	ARP.java
+	L2Switch.java
+	dragon.zip
+	phase1.html
 
 
 ## List the full path for two files (in different directories) on the FTP server that were NOT downloaded.
-
+	/phase1/StoreForwardingDataLink.java
+	/jerry5tests.zip
 
 # Trace 3: Traceroute
 ## Briefly describe how the traceroute tool works including which network protocols are in use.
