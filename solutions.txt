@@ -54,4 +54,4 @@ There were four files:
 	The content is "pop is cool".
 
 ## What email client (application) and operating system is this person using to send and receive email?
-	They are using Thunderbird 2.0.0.23 on a Windows operatin systme.
+	They are using Thunderbird 2.0.0.23 on a Windows operating system.
