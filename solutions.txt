@@ -41,10 +41,17 @@ There were four files:
 
 # Trace 4: POP
 ## What is the POP username and password?
+	username: cs155@dummymail.com
+	password: whitehat
 
 ## How many emails are in the user’s mailbox?
+	5
 
 ## Give the contents of from, to, subject, and date for one email message.
+	One of the emails is from harinym@stanford.edu and is being sent to cs155@dummymail.com. The subject is 'wassup' and it was sent
+	on Friday, April 23rd 2010 at 08:21:51
+	
+	The content is "pop is cool".
 
 ## What email client (application) and operating system is this person using to send and receive email?
-
+	They are using Thunderbird 2.0.0.23 on a Windows operatin systme.
