@@ -33,10 +33,40 @@ There were four files:
 
 # Trace 3: Traceroute
 ## Briefly describe how the traceroute tool works including which network protocols are in use.
+	The traceroute tool is used to find the path of IP addresses used to get from the host machine (that issued the 
+	traceroute request) to the destination IP address. To do this User Datagram Protocol is used to send packets to the next
+	device along the path. The initial packet will have a Time-To-Live (TTL) value of 1, which gets decremented for each
+	IP address passed through from host to destination. When the TTL value reaches zero the current IP address in the path will
+	send an ICMP echo back to the host saying TTL value  exceeded. For this initial packet that means it will tell us the 
+	first device in our path form host to destination. Traceroute will then send out another UDP packet with TTL value 2, which
+	will find the second IP address in the path. The next UDP packet will have a TTL value of 3, and this pattern continues 
+	until the destination is reached, giving the host an entire list of IP addresses passed through to get to 
+	the destination. 
+	
+	***Also, I don't know if this is the same across all OS's but in OS X it appears that traceroute will actually send out three
+	packets in a row with the same TTL value, meaning they would get the first IP address three times in a row, followed by the
+	second IP address three times in a row, etc. I assume this is done incase a random packet gets dropped.
+
 
 ## Give the source IP address that issued the traceroute command and the destination IP address.
+	Source: 192.168.0.100
+	Destination: 74.125.225.46
 
 ## List the IP addresses on the route between source and destination.
+	Host: 192.168.0.100
+	192.168.0.1 (I assume this is the router for the users home network)
+	10.131.180.1
+	96.34.20.20
+	96.34.17.95
+	96.34.16.112
+	96.34.2.4
+	96.34.0.7
+	96.34.0.9
+	96.34.3.9
+	96.34.152.30
+	209.85.254.120
+	209.85.250.28
+	Destination: 74.125.225.46
 
 
 # Trace 4: POP
